@@ -1,0 +1,109 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block banner-slider %}
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'app/images/banner/b2.jpg' %}" height="700px" width="500px "class="d-block w-100" alt="banner image">
+            </div>
+                <div class="carousel-item">
+                    <img src="{% static 'app/images/banner/b1.jpg' %}"  height="700px" width="500px" class="d-block w-100" alt="banner image">
+                </div>
+            <div class="carousel-item">
+                <img src="{% static 'app/images/banner/b3.jpg' %}"  height="700px" width="500px" class="d-block w-100" alt="banner image">
+            </div>
+        </div>
+    </div>
+{% endblock banner-slider %}
+
+{% block information %}
+    <div class="container">
+        <div class="row bg-success text-center p-5 text-white border-bottom shadow">
+            <h1>Products</h1>
+            <small class="fs-5">Welcome to the vegetable shop, all the products are fresh and pure, please apply, we are at your service, we have both online and offline application methods, order and get good quality vegetable and various grocery store products.  Products, our address and login and signup must be done to order, thanks customers or consumers.</small>
+        </div>
+    </div>
+{% endblock information %}
+
+{% block main-content %}
+    <div class="container">
+        <h2 class="text-center">Products</h2>
+        <br></br>
+        <div class="row container">
+                <div class="col-md-4 col-sm-4 mt-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation animation-delay: 0.6s; animation-name: none;">
+                    <div class="goodnesssec buttermilk smbg">
+                        <a href="{% url "category" "WINTER" %}">
+                            <div class="goodnessseccont text-center">
+                                <img src="{% static 'app/images/product/beetroot.jpg' %}" class="img-responsive" alt="">
+                                <p class="milkpro">Beetroot</p>
+                            </div>
+                        </a>    
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-4 mt-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation animation-delay: 0.6s; animation-name: none;">
+                    <div class="goodnesssec buttermilk curdbgpro">
+                            <a href="{% url "category" "SUMMER" %}">
+                                <div class="goodnessseccont text-center">
+                                    <img src="{% static 'app/images/product/potato.jpg' %}" class="img-responsive" alt="">
+                                    <p class="milkpro">Potato</p>
+                                </div>
+                            </a>    
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-4 mt-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation animation-delay: 0.6s; animation-name: none;">
+                    <div class="goodnesssec buttermilk buttermilk">
+                            <a href="{% url "category" "SUMMER" %}">
+                                <div class="goodnessseccont text-center">
+                                    <img src="{% static 'app/images/product/tomato.jpg' %}" class="img-responsive" alt="">
+                                    <p class="milkpro">Tomato</p>
+                                </div>
+                            </a>    
+                       </div>
+                   </div>
+               </div>
+
+               <br><br>
+
+                <div class="row container">
+                        <div class="col-md-4 col-sm-4 mt-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation animation-delay: 0.6s; animation-name: none;">
+                            <div class="goodnesssec buttermilk smbg">
+                                <a href="{% url "category" "SUMMER" %}">
+                                    <div class="goodnessseccont text-center">
+                                        <img src="{% static 'app/images/product/brinjal.jpg' %}" class="img-responsive" alt="">
+                                        <p class="milkpro">Brinjal</p>
+                                    </div>
+                                </a>    
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-4 mt-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation animation-delay: 0.6s; animation-name: none;">
+                            <div class="goodnesssec buttermilk curdbgpro">
+                                    <a href="{% url "category" "MONSOON" %}">
+                                        <div class="goodnessseccont text-center">
+                                            <img src="{% static 'app/images/product/radish.jpg' %}" class="img-responsive" alt="">
+                                            <p class="milkpro">Radish</p>
+                                        </div>
+                                    </a>    
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-4 mt-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation animation-delay: 0.6s; animation-name: none;">
+                            <div class="goodnesssec buttermilk buttermilk">
+                                    <a href="{% url "category" "WINTER" %}">
+                                        <div class="goodnessseccont text-center">
+                                            <img src="{% static 'app/images/product/cucumber.jpg' %}" class="img-responsive" alt="">
+                                            <p class="milkpro">Cucumber</p>
+                                        </div>
+                                    </a>    
+                               </div>
+                           </div>
+                       </div>
+    </div>
+    <br></br>
+{% endblock main-content %}
+
+
